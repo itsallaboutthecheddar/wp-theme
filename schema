@@ -1,0 +1,537 @@
+{
+  "@context": "http://www.schema.org",
+  "@type": ["LegalService", "Attorney"],
+  "@id": "[[:url]]",
+  "name": "[[full_name]]",
+  "legalName": "[[full_name]]",
+  "description": "[[description]]",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "[[logo]]"
+  },
+  "url": "[[:url]]",
+  "telephone": "[[telephone]]",
+  "email": "[[email]]",
+  "priceRange": "[[price_range]]",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "hoursAvailable": "[[work_hours]]"
+  },
+  "image": [
+    {
+      "@type": "ImageObject",
+      "url": "[[cover]]"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "[[gallery]]"
+    }
+  ],
+  "hasMap": "https://www.google.com/maps/@[[:lat]],[[:lng]]z",
+  "sameAs": "[[links]]",
+  "currenciesAccepted": "[[currenciesAccepted]]",
+  "paymentAccepted": "[[paymentAccepted]]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[[street_address]]",
+    "addressLocality": "[[city]]",
+    "addressRegion": "[[state]]",
+    "postalCode": "[[zip_code]]",
+    "addressCountry": "[[country]]"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "[[:lat]]",
+    "longitude": "[[:lng]]"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "[[:reviews-average]]",
+    "reviewCount": "[[:reviews-count]]",
+    "bestRating": "[[:reviews-mode]]",
+    "worstRating": 0
+  },
+  "founder": {
+    "@type": "Person",
+    "givenName": "[[first_name]]",
+    "additionalName": "[[middle_name]]",
+    "familyName": "[[last_name]]",
+    "jobTitle": "[[job_title]]",
+    "email": "[[email]]",
+    "telephone": "[[telephone]]",
+    "sameAs": "[[linkedin]]",
+    "birthDate": "[[date_of_birth]]",
+    "gender": "[[gender]]",
+    "description": "[[description]]",
+    "award": "[[awards_and_honors]]",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "[[law_school]]"
+    },
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "name": "[[bar_association_membership]]"
+      },
+      {
+        "@type": "Organization",
+        "name": "[[professional_memberships]]"
+      },
+      {
+        "@type": "Organization",
+        "name": "[[professional_associations]]"
+      }
+    ],
+    "knowsLanguage": "[[languages]]",
+    "nationality": {
+      "@type": "Country",
+      "name": "[[country]]"
+    },
+    "honorificSuffix": "[[special_licenses_and_certifications]]",
+    "worksFor": {
+      "@type": "LegalService",
+      "name": "[[organization_name]]",
+      "sameAs": "[[website]]"
+    }
+  },
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "[[full_name]]",
+      "jobTitle": "[[position_in_organization]]",
+      "email": "[[email]]",
+      "telephone": "[[telephone]]",
+      "sameAs": "[[linkedin]]",
+      "birthDate": "[[date_of_birth]]",
+      "gender": "[[gender]]",
+      "description": "[[description]]",
+      "award": "[[awards_and_honors]]",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "[[law_school]]"
+      },
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "[[bar_association_membership]]"
+        },
+        {
+          "@type": "Organization",
+          "name": "[[professional_memberships]]"
+        },
+        {
+          "@type": "Organization",
+          "name": "[[professional_associations]]"
+        }
+      ],
+      "knowsLanguage": "[[languages]]",
+      "nationality": {
+        "@type": "Country",
+        "name": "[[country]]"
+      },
+      "honorificSuffix": "[[special_licenses_and_certifications]]"
+    }
+  ],
+  "areaServed": "[[jurisdictions_practiced_in]]",
+  "awards": "[[awards_and_honors]]",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Legal Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "[[practice_areas]]"
+        }
+      }
+    ]
+  },
+  "serviceArea": [
+    {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "[[:lat]]",
+        "longitude": "[[:lng]]"
+      },
+      "geoRadius": "[[service_area_radius]]"
+    }
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "[[hourly_rate]]",
+        "priceCurrency": "USD"
+      },
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Legal Consultation"
+      }
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Bar ID",
+      "value": "[[bar_id]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bar Admission Year",
+      "value": "[[bar_admission_year]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Professional Liability Insurance",
+      "value": "[[professional_liability_insurance]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Age",
+      "value": "[[age]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bar Association Committee Involvement",
+      "value": "[[bar_association_committee_involvement]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bar Profile",
+      "value": "[[bar_profile_yes_no]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Case Types Handled",
+      "value": "[[case_types_handled]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cell Phone",
+      "value": "[[cell_phone]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Charitable Work",
+      "value": "[[charitable_work]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Client Demographics",
+      "value": "[[client_demographics]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Client Intake Process",
+      "value": "[[client_intake_process]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Client Rating",
+      "value": "[[client_rating]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Client Testimonials",
+      "value": "[[client_testimonials]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Company",
+      "value": "[[company]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LinkedIn Connections",
+      "value": "1st Degree: [[connections_1st]], 2nd Degree: [[connections_2nd]], 3rd Degree: [[connections_3rd]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Contact Person",
+      "value": "[[contact_person]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Contact Preferences",
+      "value": "[[contact_preferences]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Contingency",
+      "value": "[[contingency]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "County",
+      "value": "[[county]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "County ID",
+      "value": "[[county_id]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Current Cases",
+      "value": "[[current_cases]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Currently Licensed To Practice",
+      "value": "[[currently_licensed_to_practice]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Detailed Biography",
+      "value": "[[detailed_biography]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Disclaimer",
+      "value": "[[disclaimer]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Education Level",
+      "value": "[[education_level]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Employees",
+      "value": "[[employees]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Endorsements",
+      "value": "[[endorsements]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ethics Complaints",
+      "value": "[[ethics_complaints]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Favorite Judges",
+      "value": "[[favorite_judges]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fee Structure",
+      "value": "[[fee_structure]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Firm Size",
+      "value": "[[firm_size]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FL ID",
+      "value": "[[fl_id]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "G ID",
+      "value": "[[g_id]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Google Maps URL",
+      "value": "[[google_maps_url]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HTML Content",
+      "value": "[[html]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Keywords",
+      "value": "[[keywords]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Languages Fluent",
+      "value": "[[languages_fluent]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Law School Specialization",
+      "value": "[[law_school_specialization]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Legal Aid Participation",
+      "value": "[[legal_aid_participation]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Litigation Strategy",
+      "value": "[[litigation_strategy]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Media Mentions",
+      "value": "[[media_mentions]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mentorship Offered",
+      "value": "[[mentorship_offered]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NAICS",
+      "value": "[[naics]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Notable Cases",
+      "value": "[[notable_cases]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Notable Clients",
+      "value": "[[notable_clients]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Employees",
+      "value": "[[organization_employees]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Organization ID",
+      "value": "[[organization_id]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Organization or Attorney",
+      "value": "[[organization-or-attorney]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ownership Funding Info",
+      "value": "[[ownershipFundingInfo]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Peer Rating",
+      "value": "[[peer_rating]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Previous Settlements",
+      "value": "[[previous_settlements]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pro Bono Work",
+      "value": "[[pro_bono_work]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Professional Experience",
+      "value": "[[professional_experience]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Professional Motto",
+      "value": "[[professional_motto]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Published Articles",
+      "value": "[[published_articles]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Region",
+      "value": "[[region]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Retainer Fee",
+      "value": "[[retainer_fee]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Reviews",
+      "value": "[[reviews]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Scrape URL",
+      "value": "[[scrape_url]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Settlement Record",
+      "value": "[[settlement_record]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Slogan",
+      "value": "[[slogan]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Source Time",
+      "value": "[[source_time]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Specializations and Focus Areas",
+      "value": "[[specializations_and_focus_areas]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "State Bar ID",
+      "value": "[[state_bar_id]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "State ID",
+      "value": "[[state_id]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "State Licenses",
+      "value": "[[state-licenses]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Storage",
+      "value": "[[storage]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Technology Used",
+      "value": "[[technology_used]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Trial Experience",
+      "value": "[[trial_experience]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Updated Time",
+      "value": "[[updated_time]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Virtual Consultations",
+      "value": "[[virtual_consultations]]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Created Time",
+      "value": "[[created_time]]"
+    }
+  ]
+}
